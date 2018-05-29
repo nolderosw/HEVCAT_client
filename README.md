@@ -1,7 +1,7 @@
 # HEVCAT_client
 Cliente para projeto de uma Plataforma de Suporte à Realização de Testes Automatizados de Codificadores High Efficiency Video Coding
 
-# Requisitos para rodar o servidor
+# Requisitos para rodar o cliente
 
 Ter instalado o node.js: https://nodejs.org/en/
 Ter instalado o grunt.js: https://nandovieira.com.br/usando-gruntjs
