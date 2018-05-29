@@ -1,0 +1,102 @@
+<div ng-show="!currentUser" ng-include="'views/login.html'"></div>
+<div ng-show="currentUser" id="wrapper" ng-controller="Header_menuCtrl">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element">
+            <span>
+              <a href="#!/">
+                <img alt="image" class="img-responsive" src="img/logo.png" /> </a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <a href="#!/">
+            <i class="fa fa-home"></i>
+            <span class="nav-label">Início</span>
+          </a>
+        </li>
+        <li>
+            <a href="#!/">
+              <i class="fa fa-calendar"></i>
+              <span class="nav-label">Agenda Virtual</span>
+            </a>
+          </li>
+        <li>
+          <a>
+            <i class="fa fa-users"></i>
+            <span class="nav-label">Clientes</span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#!/verclientes">Ver clientes</a>
+            </li>
+            <li>
+              <a href="#!/adicionarclientes">Adicionar clientes</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a>
+            <i class="fa fa-address-card-o"></i>
+            <span class="nav-label">Funcionários</span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#!/verfuncionarios">Ver funcionários</a>
+            </li>
+            <li>
+              <a href="#!/adicionarfuncionarios">Adicionar funcionários</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+            <a href="#!/financeiro">
+              <i class="fa fa-usd"></i>
+              <span class="nav-label">Financeiro</span>
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li>
+            <span class="m-r-sm text-muted welcome-message">Bem vindo, {{currentUser.name}}.</span>
+          </li>
+          <li>
+            <a href="/minhaconta">
+              <i class="fa fa-gear"></i> Minha conta
+            </a>
+          </li>
+          <li>
+            <button href="#" ng-click="logout()">
+              <i class="fa fa-sign-out"></i> Sair
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+    <div ng-view=""></div>
+    <div class="footer">
+        <div>
+            <strong>Copyright</strong>
+            <a target="_blank" href="http://wesleyazevedo.herokuapp.com">WA Desenvolvimento de Sofware</a> &copy; 2018
+        </div>
+    </div>
+  </div>
+  
+</div>

@@ -1,0 +1,101 @@
+<div style="min-height: 602px;" class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>Adicionar Funcionário</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Tipo</label>
+                            <select class="form-control" ng-model="user.role">
+                                <option value="">Selecione o tipo de funcionário</option>
+                                <option value="ADMIN">Administrador</option>
+                                <option value="EMPLOYEE">Funcionário</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Nome
+                                <!-- <sup>*</sup> -->
+                            </label>
+                            <input type="text" class="form-control" placeholder="Informe o nome completo" ng-model="user.name" maxlength="50" minlength="3"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Gênero</label>
+                            <select class="form-control" ng-model="user.gender">
+                                <option value="">Selecione o gênero</option>
+                                <option value="MALE">Masculino</option>
+                                <option value="FEMALE">Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>E-mail
+                                <!-- <sup>*</sup> -->
+                            </label>
+                            <input type="text" class="form-control" placeholder="Informe o email para contato" ng-model="user.email" maxlength="50" minlength="3"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Data de nascimento
+                                <!-- <sup>*</sup> -->
+                            </label>
+                            <input type="date" class="form-control" ng-model="user.birthDate" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Celular
+                                <!-- <sup>*</sup> -->
+                            </label>
+                            <input placeholder="(99) 99999-9999" id="icel" type="text" class="form-control" ng-model="user.cellPhone" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Nome de usuário
+                            </label>
+                            <input type="username" class="form-control" placeholder="Informe um nome de usuário" ng-model="user.username" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Senha
+                            </label>
+                            <input type="password" placeholder="Digite uma senha" class="form-control" ng-model="user.password" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Repita a senha
+                            </label>
+                            <input type="password" placeholder="Digite a senha novamente" class="form-control" ng-model="repeatPassword" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button style="margin-top: 3%" href="#" ng-click="postUser()" class="btn-lg btn-primary">Salvar
+                        </button>
+                        <button ng-click="reloadRoute()" type="reset" style="margin-left: 1%" href="#" class="btn-lg btn-default">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

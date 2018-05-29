@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="clientApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HEVCAT Client</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Node_modules styles -->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div ng-include="'views/header_menu.html'"></div>
+
+    <!-- Essencential scripts -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="js/custom/jquery-3.1.1.min.js"></script>
+    
+    <!-- Node_modules scripts -->
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/custom/bootstrap.min.js"></script>
+    <script src="js/custom/angular-viacep.min.js"></script>
+    <script src="js/custom/jquery.metisMenu.js"></script>
+    <script src="js/custom/jquery.slimscroll.min.js"></script>
+    <script src="js/custom/inspinia.js"></script>
+
+    <!-- Controllers scripts -->
+    <script src="js/controllers/header_menu.js"></script>
+    <script src="js/controllers/login.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/clientes/adicionarclientes.js"></script>
+    <script src="js/controllers/clientes/verclientes.js"></script>
+    <script src="js/controllers/funcionarios/adicionarfuncionarios.js"></script>
+    <script src="js/controllers/funcionarios/verfuncionarios.js"></script>
+
+    <!-- Interceptors scripts -->
+    <script src="js/interceptors/errorinterceptor.js"></script>
+</body>
+
+</html>
