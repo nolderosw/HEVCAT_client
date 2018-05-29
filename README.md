@@ -8,4 +8,4 @@ Ter instalado o grunt.js: https://nandovieira.com.br/usando-gruntjs
 
 # Build and Run
 
-entre na pasta da aplicação com o terminal (caso mac ou linux) e cmd (caso windows) e dê um "npm install", após isso serão instaladas as dependencias do cliente, para rodar o servidor, na pasta, dê um "grunt". O cliente estará rodando na porta 3001. :)
+entre na pasta da aplicação com o terminal (caso mac ou linux) e cmd (caso windows) e dê um "npm install", após isso serão instaladas as dependencias do cliente, para rodar o cliente, na pasta, dê um "grunt". O cliente estará rodando na porta 3001. :)
